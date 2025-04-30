@@ -1,5 +1,5 @@
 let nama = "Mikhaii";
-const umur = 21;
+const umur = 211;
 let isStudent = true;
 let kosong = null;
 let belumDiisi;
