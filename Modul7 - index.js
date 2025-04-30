@@ -1,17 +1,19 @@
-let nilai = 85;
+let NILAIKAMU = 70;
 
-if (nilai >= 90) {
-  console.log("A");
-} else if (nilai >= 75) {
-  console.log("B");
+if (NILAIKAMU >= 90) {
+    console.log("A")
+
+} else if (NILAIKAMU >= 85) {
+    console.log("B")
 } else {
-  console.log("C");
+    console.log("C")
+
 }
 
-switch (nilai) {
-  case 100:
-    console.log("Sempurna!");
-    break;
-  default:
-    console.log("Nilai bukan 100");
+switch(NILAIKAMU) {
+    case 100:
+        console.log("Sempurna");
+        break;
+    default:
+        console.log("Nilai kamu bukan 100")
 }
