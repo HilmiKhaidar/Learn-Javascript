@@ -6,4 +6,4 @@ console.log(tambah(3, 4)); // 7
 let kali = function(x, y) {
   return x * y;
 };
-console.log(kali(5, 2)); // 10
+console.log(kali(5, 1)); // 10
