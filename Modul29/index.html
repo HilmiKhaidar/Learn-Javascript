@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jam Digital dengan Zona Waktu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>⏰ Jam Digital</h2>
+
+  <div>
+    <label for="zonaWaktu">Pilih Zona Waktu:</label>
+    <select id="zonaWaktu">
+      <option value="UTC">UTC</option>
+      <option value="Asia/Jakarta">WIB (Jakarta)</option>
+      <option value="America/New_York">EST (New York)</option>
+      <option value="Europe/London">GMT (London)</option>
+    </select>
+  </div>
+
+  <div id="jamDigital">
+    <p id="waktu">Loading...</p>
+  </div>
+
+  <script src="jam.js"></script>
+</body>
+</html>
