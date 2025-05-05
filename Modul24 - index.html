@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validasi Form</title>
+</head>
+<body>
+  <form id="form">
+    <input type="text" id="namaInput" placeholder="Nama">
+    <button type="submit">Kirim</button>
+  </form>
+
+  <script>
+    function validasiForm(event) {
+      event.preventDefault();
+
+      const nama = document.getElementById("namaInput").value;
+
+      if (nama === "") {
+        alert("Nama tidak boleh kosong!");
+      } else {
+        alert("Form berhasil dikirim!");
+      }
+    }
+
+    const form = document.getElementById("form");
+    form.addEventListener("submit", validasiForm);
+  </script>
+</body>
+</html>
