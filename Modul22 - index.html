@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tambah Item</title>
+</head>
+<body>
+  <div id="container"></div>
+  <button id="tambahItemButton">Tambah Item</button>
+
+  <script>
+    function tambahItem() {
+      const container = document.getElementById("container");
+
+      const item = document.createElement("p");
+      item.innerText = "Ini item baru";
+
+      container.appendChild(item);
+    }
+
+    const tombolTambah = document.getElementById("tambahItemButton");
+    tombolTambah.addEventListener("click", tambahItem);
+  </script>
+</body>
+</html>
