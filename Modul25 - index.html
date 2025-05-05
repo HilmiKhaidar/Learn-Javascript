@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storage</title>
+</head>
+<body>
+  <h2>LocalStorage & SessionStorage</h2>
+  <button id="simpanLocalStorageButton">Simpan di LocalStorage</button>
+  <button id="simpanSessionStorageButton">Simpan di SessionStorage</button>
+  <button id="ambilDataButton">Ambil Data</button>
+
+  <script>
+    document.getElementById("simpanLocalStorageButton").addEventListener("click", function() {
+      localStorage.setItem("nama", "Mikhaii");
+      alert("Data disimpan di LocalStorage!");
+    });
+
+    document.getElementById("simpanSessionStorageButton").addEventListener("click", function() {
+      sessionStorage.setItem("status", "login");
+      alert("Data disimpan di SessionStorage!");
+    });
+
+    document.getElementById("ambilDataButton").addEventListener("click", function() {
+      const nama = localStorage.getItem("nama");
+      const status = sessionStorage.getItem("status");
+      alert(`Nama: ${nama}, Status: ${status}`);
+    });
+  </script>
+</body>
+</html>
